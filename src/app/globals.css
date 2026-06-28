@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wedding-bg: #FBF7F2;
+  --color-wedding-paper: #FFFDFB;
+  --color-wedding-maroon: #7B2327;
+  --color-wedding-dark-maroon: #5B1618;
+  --color-wedding-gold: #C8A25A;
+  --color-wedding-light-gold: #E7D6AE;
+  --color-wedding-text: #4A403A;
+  --color-wedding-border: #EADFD3;
+
+  --font-serif: var(--font-lora);
+  --font-body: var(--font-poppins);
+  --font-sans: var(--font-poppins);
+  --font-heading: var(--font-ballet);
+  --font-ballet: var(--font-ballet);
+  --font-corinthia: var(--font-corinthia);
+
+  --radius-xl: 24px;
+}
+
+/* Custom CSS Font Classes */
+.ballet-regular {
+  font-family: var(--font-ballet), cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.corinthia-regular {
+  font-family: var(--font-corinthia), cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.corinthia-bold {
+  font-family: var(--font-corinthia), cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  :root {
+    background-color: var(--color-wedding-bg);
+    color: var(--color-wedding-text);
+  }
+
+  body {
+    @apply font-body;
+    position: relative;
+    /* Subtle paper texture noise */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+
+  h1, h2 {
+    font-family: var(--font-ballet), cursive;
+    @apply text-wedding-maroon;
+  }
+
+  h3, h4, h5, h6 {
+    font-family: var(--font-corinthia), cursive;
+    @apply text-wedding-maroon;
+  }
+}
+
+/* Lenis smooth scrolling reset */
+html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
