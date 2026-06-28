@@ -4,11 +4,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const images = [
+  "/images/WhatsApp Image 2026-06-28 at 5.20.00 PM (1).jpeg",
   "/images/gallery-1.jpg",
+  "/images/WhatsApp Image 2026-06-28 at 5.20.02 PM.jpeg",
+  "/images/WhatsApp Image 2026-06-28 at 5.20.19 PM.jpeg",
   "/images/gallery-2.jpg",
   "/images/gallery-3.jpg",
-  "/images/gallery-4.jpg",
-  "/images/gallery-5.jpg",
 ];
 
 export default function Gallery() {

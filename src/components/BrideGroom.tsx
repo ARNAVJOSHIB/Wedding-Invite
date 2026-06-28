@@ -14,7 +14,7 @@ const profiles = [
       "Late Mr. Ramanlal Motilalsa Solanke"
     ],
     location: "Amravati",
-    image: "/images/bride.jpg",
+    image: "/images/bride.jpeg",
     color: "bg-[#7B2327]/5"
   },
   {
@@ -26,7 +26,7 @@ const profiles = [
       "Mr. Kiran Vithobasa Jesu"
     ],
     location: "Nanded",
-    image: "/images/groom.jpg",
+    image: "/images/Groom.jpeg",
     color: "bg-[#C8A25A]/5"
   }
 ];
